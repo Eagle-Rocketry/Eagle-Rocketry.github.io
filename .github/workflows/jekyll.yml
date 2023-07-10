@@ -35,7 +35,7 @@ jobs:
         with:
           ruby-version: "3"
           bundler-cache: true
-        working-directory: ./src
+          working-directory: ./src
 
       - name: Build
         run: bundle exec jekyll build --trace
