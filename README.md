@@ -25,9 +25,10 @@ Follow these steps to contribute to any GitHub project:
 6. Monitor for comments & requested changes until merge is denied or approved.
 
 ## Jekyll Development Basics
-1. Make changes in `/src`.
-2. Run `bundle exec jekyll serve` inside `/src`.
-3. View built website at `http://localhost:4000/`.
+1. Install any dependencies with `bundle update` in `/src`.
+2. Make changes in `/src`.
+3. Run `bundle exec jekyll serve` inside `/src`.
+4. View built website at `http://localhost:4000/`.
     - Further changes will be automatically rebuilt.
 
 ## Contact Info
