@@ -5,7 +5,7 @@
 - [Ruby & Jekyll](https://jekyllrb.com/docs/installation/)
 
 ## Repository Structures
-`/.github` - Repositotry meta folder.
+`/.github` - Repositotry meta folder.  
 `/src` - Site development folder.  
 
 ## Contribution Guidelines
