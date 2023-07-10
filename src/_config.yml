@@ -29,7 +29,7 @@ url: "http://eagle-rocketry.github.io" # the base hostname & protocol for your s
 
 # Build settings
 # theme: minima
-# plugins:
+# plugins:  
 #   - jekyll-feed
 
 # Exclude from processing.
