@@ -3,7 +3,7 @@ title:  "Welcome to the ERSEDS Wiki!"
 published: true
 permalink: welcome.html
 summary: "The ERSEDS wiki is up and running!"
-tags: [news, getting_started]
+tags: [club]
 ---
 
 ## Welcome to the wiki!
