@@ -1,0 +1,15 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: Propulsion
+  levels: one
+  folders:
+
+  - title: Propulsion Overview
+    output: web
+    folderitems:
+    - title: Index
+      url: /propulsion_index.html
+      output: web
+
+# Copyright 2023 ERSEDS
