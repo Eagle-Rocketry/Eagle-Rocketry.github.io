@@ -3,6 +3,7 @@ title:  "Welcome to the ERSEDS Wiki!"
 published: true
 permalink: welcome.html
 summary: "The ERSEDS wiki is up and running!"
+date: 2023-07-10 19:33 -0700
 tags: [club]
 ---
 
