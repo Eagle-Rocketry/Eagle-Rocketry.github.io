@@ -1,10 +1,11 @@
 ---
 title:  "Markdown Playground"
+author: "Jordan Doose"
 published: true
 permalink: markdown-playground.html
 summary: "All the markdown formatting you could ever dream of"
 date: 2023-07-10 22:54 -0700
-tags: []
+tags: [site]
 ---
 
 # Markdown: Syntax

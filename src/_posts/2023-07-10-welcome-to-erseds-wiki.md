@@ -1,10 +1,11 @@
 ---
 title:  "Welcome to the ERSEDS Wiki!"
+author: "Jordan Doose"
 published: true
 permalink: welcome.html
 summary: "The ERSEDS wiki is up and running!"
 date: 2023-07-10 19:33 -0700
-tags: [club]
+tags: [club, site]
 ---
 
 ## Welcome to the wiki!
