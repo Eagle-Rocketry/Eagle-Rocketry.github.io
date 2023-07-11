@@ -111,7 +111,7 @@ description: "The ERSEDS Wiki is Eagle Rocketry's common knowledge repository."
 # the description is used in the feed.xml file
 
 # needed for sitemap.xml file only
-url: http://erseds.me
+url: http://eaglerocketry.me
 baseurl: /
 
 
