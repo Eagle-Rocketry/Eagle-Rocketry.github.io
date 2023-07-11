@@ -4,7 +4,7 @@ keywords: home, introduction, table of contents
 last_updated: July 10, 2023
 tags: [payload]
 sidebar: payload_sidebar
-permalink: payloade_index.html
+permalink: payload_index.html
 folder: payload
 ---
 

@@ -9,7 +9,7 @@ entries:
     output: web
     folderitems:
     - title: Index
-      url: /liquids_index.html
+      url: /payload_index.html
       output: web
 
 # Copyright 2023 ERSEDS
