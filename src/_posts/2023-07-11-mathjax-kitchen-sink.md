@@ -12,13 +12,15 @@ usemathjax: true
 # MathJax: Usage
 
 To enable MathJax in a post or page, the quantifier `usemathjax: true` must be
-included in the markdown frontmatter. After that, mathjax can be utilized by
-surrounding LaTeX syntax with `$$`, like so:  
+included in the markdown frontmatter. After that, MathJax can be utilized by
+surrounding LaTeX syntax with `\\[ \\]`, like so:  
 
-`\[\frac{a}{b}^2\cdotp\rho=c\]`
+`\\[\frac{a}{b}^2\cdotp\rho=c\\]`
 
 which produces
 
-\[\frac{a}{b}^2\cdotp\rho=c\]
+\\[\frac{a}{b}^2\cdotp\rho=c\\]
+
+Inline LaTeX can be formatted as `\\(x^2\\)`, becoming \\(x^2\\) .
 
 Happy mathing!
