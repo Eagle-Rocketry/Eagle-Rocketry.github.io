@@ -12,4 +12,8 @@ entries:
       url: /liquids_index.html
       output: web
 
+  - title: 🠔 Back to Home
+    output: web
+    url: /index.html
+
 # Copyright 2023 ERSEDS
