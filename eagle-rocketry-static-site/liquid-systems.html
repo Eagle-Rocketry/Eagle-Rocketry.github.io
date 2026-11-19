@@ -6,8 +6,14 @@
   <meta name="theme-color" content="#070b0f">
   <title>Liquid Systems — Eagle Rocketry</title>
   <meta name="description" content="Explore Eagle Rocketry's liquid feed architecture and pressure-control logic at Cal State LA.">
+  <meta property="og:title" content="Liquid Systems — Eagle Rocketry">
+  <meta property="og:description" content="Explore Eagle Rocketry's liquid feed architecture, pressure conditions, relay actions, and working documentation.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://eagle-rocketry.github.io/liquid-systems.html">
+  <link rel="canonical" href="https://eagle-rocketry.github.io/liquid-systems.html">
   <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css?v=2026-11-18c">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body class="project-page">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -17,7 +23,7 @@
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="Eagle Rocketry home"><img src="assets/mark.svg" alt=""><span><strong>Eagle Rocketry</strong><small>Cal State LA</small></span></a>
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-    <nav id="site-nav" aria-label="Primary navigation"><a href="index.html">Home</a><a class="active" href="liquid-systems.html">Liquid Systems</a><a href="solid-tvc.html">Solid / TVC</a><a href="index.html#resources">Resources</a><a class="nav-cta" href="mailto:eagle.rocketry.seds@gmail.com">Contact</a></nav>
+    <nav id="site-nav" aria-label="Primary navigation"><a href="index.html">Home</a><a class="active" aria-current="page" href="liquid-systems.html">Liquid Systems</a><a href="solid-tvc.html">Solid / TVC</a><a href="index.html#resources">Resources</a><a class="nav-cta" href="mailto:eagle.rocketry.seds@gmail.com">Contact</a></nav>
   </header>
 
   <main id="main" class="project-main">
@@ -53,7 +59,7 @@
           <span>Liquid pressure control</span>
           <div><button type="button" data-zoom="out" aria-label="Zoom out">−</button><output data-zoom-readout>100%</output><button type="button" data-zoom="in" aria-label="Zoom in">+</button><button type="button" data-zoom="reset">Reset</button></div>
         </div>
-        <div class="diagram-stage"><img class="zoom-diagram" src="assets/flight-operations-logic.png" alt="Liquid pressure-control diagram showing conditions, relays, manual actions, system unlock, and ignition logic"></div>
+        <div class="diagram-stage"><img class="zoom-diagram" src="assets/flight-operations-logic.png" alt="Liquid pressure-control diagram showing conditions, relays, manual actions, system unlock, and ignition logic" loading="lazy" decoding="async"></div>
         <p class="diagram-help">Use the controls or mouse wheel to zoom. Drag the diagram while zoomed.</p>
       </div>
     </section>
@@ -67,7 +73,7 @@
 
     <section class="architecture project-architecture" id="feed-architecture">
       <div class="architecture-copy reveal"><p class="kicker"><span>System architecture</span> Liquid feed</p><h2>Trace the hardware.</h2><p>The feed diagram maps nitrogen pressurization, fuel and oxidizer distribution, pneumatic controls, instrumentation, and the rocket engine.</p><div class="architecture-actions"><a class="button button-primary" href="assets/liquid-feed-system.png" target="_blank" rel="noopener">Open full diagram <span aria-hidden="true">↗</span></a><a class="button button-quiet light" href="https://csula-my.sharepoint.com/:x:/g/personal/akuo18_calstatela_edu/IQAz0GabubVDTYpU_cpcBnSJAVRzSS6f3duHqgp0UFot28Q?e=eVxtSG" target="_blank" rel="noopener">Open working BOM <span aria-hidden="true">↗</span></a></div><p class="working-note"><strong>Working file:</strong> coefficient fitting and the component list are still in progress.</p></div>
-      <a class="diagram-frame reveal" href="assets/liquid-feed-system.png" target="_blank" rel="noopener" aria-label="Open the liquid feed system diagram at full size"><img src="assets/liquid-feed-system.png" alt="Liquid rocket feed system schematic"><span>Open full resolution ↗</span></a>
+      <a class="diagram-frame reveal" href="assets/liquid-feed-system.png" target="_blank" rel="noopener" aria-label="Open the liquid feed system diagram at full size"><img src="assets/liquid-feed-system.png" alt="Liquid rocket feed system schematic" loading="lazy" decoding="async"><span>Open full resolution ↗</span></a>
     </section>
 
     <section class="project-next section reveal">

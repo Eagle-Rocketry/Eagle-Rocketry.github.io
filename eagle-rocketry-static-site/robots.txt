@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eagle-rocketry.github.io/sitemap.xml
