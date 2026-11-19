@@ -1,3 +1,16 @@
 *.svg.bkp
 .DS_Store
 */.DS_Store
+
+# Local design handoff and working source files
+/Eagle_Rocketry_3D_Launch_Experience.zip
+/eagle-rocketry-static-site.zip
+/ER_LOGO_without_text.svg
+/ER_logo.svg
+/Feed System Spring 2026.xlsx
+/rocketry-Liquid_Fuel.png
+/eagle-rocketry-static-site/assets/launch-pad-v2.png
+/eagle-rocketry-static-site/assets/logo.png
+/eagle-rocketry-static-site/assets/rocket-photoreal-v3.png
+/eagle-rocketry-static-site/downloads/
+/eagle-rocketry-static-site/experience.js

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <title>Eagle Rocketry — Cal State LA</title>
+  <meta name="description" content="Eagle Rocketry at Cal State LA: student-led propulsion, controls, structures, avionics, and flight systems.">
+  <meta property="og:title" content="Eagle Rocketry — Cal State LA">
+  <meta property="og:description" content="Explore Eagle Rocketry's liquid and solid flight systems and student engineering work.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://eagle-rocketry.github.io/">
+  <link rel="canonical" href="https://eagle-rocketry.github.io/">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css?v=2026-11-18d">
+  <link rel="stylesheet" href="home-flight12.css?v=2026-11-18">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="flight12-home intro-active">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="smoke" aria-hidden="true"></canvas>
+  <div id="intro" aria-label="Animated launch introduction">
+    <div class="intro-brand">Eagle Rocketry<small>Cal State LA</small></div>
+    <div class="loader-orbit" id="loader-orbit">
+      <svg viewBox="0 0 240 240" aria-hidden="true"><circle class="loader-track" cx="120" cy="120" r="104"></circle><circle class="loader-progress" id="loader-progress" cx="120" cy="120" r="104"></circle></svg>
+      <span class="loader-ticks" aria-hidden="true"></span>
+      <img src="assets/mark.svg" alt="">
+      <div class="loader-count"><strong id="loader-count">000</strong><small>%</small></div>
+    </div>
+    <div class="launch-rocket" id="launch-rocket" aria-hidden="true">
+      <div class="vehicle-shell"><span class="vehicle-nose"></span><span class="vehicle-panel vehicle-panel-a"></span><span class="vehicle-panel vehicle-panel-b"></span><img src="assets/mark.svg" alt=""><span class="vehicle-fin vehicle-fin-left"></span><span class="vehicle-fin vehicle-fin-right"></span></div>
+      <span class="exhaust-core"></span><span class="exhaust-glow"></span>
+    </div>
+    <div class="intro-status" id="intro-status">Loading</div>
+    <div class="intro-meta">Eagle Rocketry<br>Cal State LA</div>
+  </div>
+  <button id="skip-intro" type="button">Skip intro</button>
+
+  <header class="f12-header">
+    <a class="f12-brand" href="#top" aria-label="Eagle Rocketry home"><img src="assets/mark.svg" alt=""><span>Eagle Rocketry</span></a>
+    <button class="f12-menu" type="button" aria-expanded="false" aria-controls="f12-nav">Menu</button>
+    <nav id="f12-nav" aria-label="Primary navigation"><a href="liquid-systems.html">Liquid</a><a href="solid-tvc.html">Solid / TVC</a><a href="mailto:eagle.rocketry.seds@gmail.com">Contact</a></nav>
+  </header>
+
+  <main id="main">
+    <section class="f12-hero" id="top" aria-labelledby="hero-title">
+      <img class="f12-hero-media" src="assets/flight-operations-logic.png" alt="Liquid pressure-control logic developed by Eagle Rocketry">
+      <div class="f12-hero-shade"></div>
+      <div class="f12-hero-title"><p>CAL STATE LA</p><h1 id="hero-title">EAGLE ROCKETRY</h1></div>
+      <p class="f12-source">Pressure-control logic <a href="liquid-systems.html#control-logic">View system</a></p>
+    </section>
+
+    <section class="f12-scroll-story" aria-label="Eagle Rocketry systems overview">
+      <div class="f12-sticky">
+        <div class="f12-object-stage" aria-hidden="true">
+          <img class="f12-object is-active" data-scene-image="0" src="assets/liquid-feed-system.png" alt="">
+          <img class="f12-object" data-scene-image="1" src="assets/flight-operations-logic.png" alt="">
+          <img class="f12-object f12-object-portrait" data-scene-image="2" src="assets/solid-motor-system.png" alt="">
+        </div>
+        <div class="f12-measure f12-measure-left"><b data-scene-label>LIQUID FEED</b></div>
+        <div class="f12-callouts" aria-hidden="true">
+          <p><span></span><b data-scene-callout-a>Pressurization</b></p><p><span></span><b data-scene-callout-b>Propellant distribution</b></p><p><span></span><b data-scene-callout-c>Instrumentation</b></p>
+        </div>
+        <div class="f12-scene-copy" aria-live="polite">
+          <h2 data-scene-title>Liquid Feed System</h2>
+          <p data-scene-copy>The current architecture maps nitrogen pressurization, fuel and oxidizer distribution, pneumatic controls, instrumentation, and the engine.</p>
+          <a data-scene-link href="liquid-systems.html#feed-architecture">Explore the system →</a>
+        </div>
+      </div>
+      <div class="f12-scene-marker" data-scene="0" aria-hidden="true"></div><div class="f12-scene-marker" data-scene="1" aria-hidden="true"></div><div class="f12-scene-marker" data-scene="2" aria-hidden="true"></div>
+    </section>
+
+    <section class="f12-statement" aria-labelledby="systems-heading">
+      <h2 id="systems-heading"><span>The</span><span>Systems</span><span>That Make</span><span>This Happen</span></h2><img src="assets/mark.svg" alt="" aria-hidden="true">
+    </section>
+
+    <section class="f12-detail" id="solid-system">
+      <div class="f12-detail-object">
+        <img src="assets/solid-motor-system.png" alt="Solid rocket system diagram showing camera, avionics, recovery, thrust-vector-control servos, and motor" loading="lazy" decoding="async">
+        <div class="f12-detail-line line-a"><span></span><b>Camera / VTX</b></div><div class="f12-detail-line line-b"><span></span><b>Avionics / Recovery</b></div><div class="f12-detail-line line-c"><span></span><b>Two-servo TVC</b></div>
+      </div>
+      <div class="f12-detail-copy"><h2>Solid Rocket / TVC</h2><p>The solid architecture connects onboard video, radio control, power, recovery, and a two-servo gimbal around the motor chamber.</p><a href="solid-tvc.html">View Solid / TVC →</a></div>
+    </section>
+
+    <section class="f12-flight" aria-label="Eagle Rocketry flight transition"><div class="f12-flight-glow"></div><img src="assets/mark.svg" alt="" aria-hidden="true"><p>Design · Build · Test · Launch</p></section>
+
+    <section class="f12-history" id="history">
+      <h2>Project History</h2>
+      <div class="f12-history-list">
+        <a href="https://www.calstatela.edu/ecst/seniordesign/capstone-senior-design-program-2019-2020-project-summaries" target="_blank" rel="noopener"><time>2019–20</time><span>Hybrid Rocket Propulsion Unit</span><b>↗</b></a>
+        <a href="https://www.calstatela.edu/ecst/seniordesign/electrical-engineering-and-mechanical-engineering-program-projects-2021" target="_blank" rel="noopener"><time>2021</time><span>Active Stabilization &amp; Altitude Control</span><b>↗</b></a>
+        <a href="https://www.calstatela.edu/ecst/seniordesign/electrical-engineering-and-mechanical-engineering-program-projects-2022" target="_blank" rel="noopener"><time>2022</time><span>Filament-Wound Composite Structures</span><b>↗</b></a>
+        <a href="liquid-systems.html"><time>Current</time><span>Liquid Feed &amp; Pressure Control</span><b>→</b></a>
+      </div>
+    </section>
+
+    <section class="f12-final" id="explore">
+      <h2>Eagle Rocketry</h2><a class="f12-action f12-action-dark" href="liquid-systems.html">Liquid Systems</a><a class="f12-action f12-action-light" href="solid-tvc.html">Solid / TVC →</a><button id="replay-launch" type="button">Replay opening</button><a class="f12-credit" href="https://www.calstatela.edu/ecst/success/clubs-and-organizations" target="_blank" rel="noopener">Cal State LA / College of ECST</a>
+    </section>
+  </main>
+
+  <footer class="f12-footer">
+    <div><h2>Eagle Rocketry at Cal State LA.</h2><p>Eagle Rocketry is Cal State LA’s student rocketry organization and SEDS chapter. Members work across propulsion, structures, avionics, controls, and payload systems.</p></div>
+    <div><p>PROJECTS</p><a href="liquid-systems.html">Liquid Systems</a><a href="solid-tvc.html">Solid / TVC</a><a href="https://csula-my.sharepoint.com/:x:/g/personal/akuo18_calstatela_edu/IQAz0GabubVDTYpU_cpcBnSJAVRzSS6f3duHqgp0UFot28Q?e=eVxtSG" target="_blank" rel="noopener">Working BOM</a></div>
+    <div><p>TEAM</p><a href="mailto:eagle.rocketry.seds@gmail.com">Contact</a><a href="https://github.com/Eagle-Rocketry" target="_blank" rel="noopener">GitHub</a><a href="https://www.calstatela.edu/ecst" target="_blank" rel="noopener">College of ECST</a></div>
+  </footer>
+
+  <script src="home-flight12.js?v=2026-11-18"></script>
+  <script src="launch.js?v=2026-11-18b"></script>
+</body>
+</html>
