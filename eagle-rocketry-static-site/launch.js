@@ -115,7 +115,7 @@
     revealStarted = false;
     loaderCount.textContent = '000';
     loaderProgress.style.strokeDashoffset = `${circumference}`;
-    introStatus.textContent = 'Calibrating flight systems';
+    introStatus.textContent = 'Loading';
     loaderOrbit.classList.remove('resolved');
     launchRocket.classList.remove('launching');
     launchRocket.style.opacity = '0';
@@ -137,15 +137,12 @@
     loaderCount.textContent = String(displayProgress).padStart(3, '0');
     loaderProgress.style.strokeDashoffset = `${circumference * (1 - loadProgress)}`;
 
-    if (elapsed < .65) introStatus.textContent = 'Initializing guidance';
-    else if (elapsed < 1.35) introStatus.textContent = 'Pressurizing systems';
-    else if (elapsed < 2.15) introStatus.textContent = 'Verifying flight logic';
-    else if (elapsed < 2.65) introStatus.textContent = 'All systems nominal';
+    if (elapsed < 2.65) introStatus.textContent = 'Loading';
 
     if (elapsed >= 2.65 && elapsed < 3.12) {
       loaderCount.textContent = '100';
       loaderOrbit.classList.add('resolved');
-      introStatus.textContent = '100 / Go for launch';
+      introStatus.textContent = 'Ready';
     }
 
     if (elapsed >= 3.05) {
@@ -159,7 +156,7 @@
       const scale = lerp(1, .68, launchProgress);
       launchRocket.style.opacity = `${clamp(launchProgress * 7, 0, 1)}`;
       launchRocket.style.transform = `translate3d(-50%, ${y}px, 0) scale(${scale})`;
-      introStatus.textContent = launchProgress < .14 ? 'Ignition' : launchProgress < .7 ? 'Liftoff' : 'Ascent';
+      introStatus.textContent = launchProgress < .14 ? 'Ignition' : 'Liftoff';
 
       if (launchProgress < .82 && now - lastSmokeSpawn > 28) {
         const rect = launchRocket.getBoundingClientRect();
@@ -192,7 +189,7 @@
     requestAnimationFrame(frame);
   };
 
-  heroVisual.addEventListener('pointermove', event => {
+  heroVisual?.addEventListener('pointermove', event => {
     const rect = heroVisual.getBoundingClientRect();
     const x = (event.clientX - rect.left) / rect.width - .5;
     const y = (event.clientY - rect.top) / rect.height - .5;
@@ -201,7 +198,7 @@
     heroVisual.style.setProperty('--hero-rotate-y', `${x * 9}deg`);
     heroVisual.style.setProperty('--hero-rotate-x', `${y * -6}deg`);
   });
-  heroVisual.addEventListener('pointerleave', () => {
+  heroVisual?.addEventListener('pointerleave', () => {
     heroVisual.style.setProperty('--hero-x', '0px');
     heroVisual.style.setProperty('--hero-y', '0px');
     heroVisual.style.setProperty('--hero-rotate-y', '0deg');
@@ -221,7 +218,7 @@
   }, { passive: true });
 
   skipIntro.addEventListener('click', finishSequence);
-  replayLaunch.addEventListener('click', startSequence);
+  replayLaunch?.addEventListener('click', startSequence);
   addEventListener('resize', resize);
 
   resize();
