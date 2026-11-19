@@ -41,6 +41,10 @@ Opening `index.html` directly also works for basic review, but a local server mo
 
 Review technical files, personal metadata, image rights, and team approval before adding new downloadable assets to the public repository.
 
+## Design direction
+
+The ranked inspiration links, approved visual principles, and next 3D milestone are recorded in [`docs/design-references.md`](docs/design-references.md). Review this document before making substantial visual changes.
+
 ## Deployment
 
 The Pages workflow uploads `eagle-rocketry-static-site/` directly. Changes pushed to a feature branch do not update the live site. Merge an approved pull request into `main` to deploy.
