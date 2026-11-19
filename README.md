@@ -31,6 +31,7 @@ Opening `index.html` directly also works for basic review, but a local server mo
 
 - The Spring 2026 bill of materials remains on the team SharePoint and is not stored in public Git history.
 - The workbook is intentionally identified as in progress because coefficient fitting and the component list are incomplete.
+- Flight Operations links to the team-contributed liquid launch logic diagram.
 - Historical project summaries link to the corresponding Cal State LA capstone archive pages.
 
 Review technical files, personal metadata, image rights, and team approval before adding new downloadable assets to the public repository.

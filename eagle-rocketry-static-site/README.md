@@ -15,9 +15,9 @@ The GitHub Pages workflow uploads this folder directly after changes reach `main
 - The liquid feed system diagram is stored in this folder as an approved public asset.
 - The Spring 2026 workbook remains on the team SharePoint and is not committed to public Git history.
 - The workbook is labeled as a working file because coefficient fitting and the component list are not finished.
-- Flight Operations is intentionally labeled as pending until Henry's logic diagram is added.
+- Flight Operations links to the team-contributed liquid launch logic diagram.
 - The project timeline cites the corresponding Cal State LA capstone archive pages.
 
-When the Flight Operations diagram is approved for publication, add it to `assets/` and replace the pending card in `index.html` with a link.
+The published Flight Operations image is a site copy of the team source in the repository-level `assets/` folder. Keep the source and published copy synchronized when the diagram changes.
 
 Before adding a new downloadable file, confirm that the team has approved its content and embedded metadata for permanent public distribution.
