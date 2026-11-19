@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#070b0f">
+  <title>Liquid Systems — Eagle Rocketry</title>
+  <meta name="description" content="Explore Eagle Rocketry's liquid feed architecture and pressure-control logic at Cal State LA.">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css?v=2026-11-18b">
+</head>
+<body class="project-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="space" aria-hidden="true"><div class="stars stars-a"></div><div class="stars stars-b"></div></div>
+  <div class="page-progress" aria-hidden="true"><span></span></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Eagle Rocketry home"><img src="assets/mark.svg" alt=""><span><strong>Eagle Rocketry</strong><small>Cal State LA</small></span></a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" aria-label="Primary navigation"><a href="index.html">Home</a><a class="active" href="liquid-systems.html">Liquid Systems</a><a href="solid-tvc.html">Solid / TVC</a><a href="index.html#resources">Resources</a><a class="nav-cta" href="mailto:eagle.rocketry.seds@gmail.com">Contact</a></nav>
+  </header>
+
+  <main id="main" class="project-main">
+    <section class="project-hero liquid-hero">
+      <div class="project-hero-copy reveal">
+        <p class="kicker"><span>Liquid propulsion</span> Pressure control</p>
+        <h1>Pressure becomes<br><em>sequence.</em></h1>
+        <p>The liquid system connects pressure conditions, relay actions, manual gates, system unlock, and ignition into one documented control path.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#control-logic">Explore the logic <span aria-hidden="true">↘</span></a><a class="button button-quiet" href="#feed-architecture">View feed architecture</a></div>
+      </div>
+      <div class="project-hero-art liquid-art reveal" aria-hidden="true">
+        <div class="art-grid"></div>
+        <div class="logic-route route-a"><span>A</span><i></i><b>PRESSURE</b></div>
+        <div class="logic-route route-b"><span>B</span><i></i><b>RELAYS</b></div>
+        <div class="logic-route route-c"><span>C</span><i></i><b>UNLOCK</b></div>
+        <div class="logic-core"><img src="assets/mark.svg" alt=""></div>
+      </div>
+      <div class="project-index" aria-hidden="true">ER / LIQUID / 01</div>
+    </section>
+
+    <section class="project-intro section reveal">
+      <div><p class="kicker"><span>01</span> Control path</p><h2>From measurement<br>to action.</h2></div>
+      <p>This page presents the team diagram as supplied. The pressure-control flow is available for review; the control-panel ladder logic shown on the right side remains a work in progress.</p>
+    </section>
+
+    <section class="diagram-section" id="control-logic">
+      <div class="diagram-heading reveal">
+        <div><p class="kicker"><span>Interactive diagram</span> Liquid logic</p><h2>Pressure-control logic.</h2></div>
+        <div class="status-panel"><strong>WIP</strong><span>Work in progress</span><p>The control-panel ladder logic on the right is not finished yet.</p></div>
+      </div>
+      <div class="diagram-viewer reveal" data-diagram-viewer>
+        <div class="diagram-toolbar" aria-label="Diagram zoom controls">
+          <span>Liquid pressure control</span>
+          <div><button type="button" data-zoom="out" aria-label="Zoom out">−</button><output data-zoom-readout>100%</output><button type="button" data-zoom="in" aria-label="Zoom in">+</button><button type="button" data-zoom="reset">Reset</button></div>
+        </div>
+        <div class="diagram-stage"><img class="zoom-diagram" src="assets/flight-operations-logic.png" alt="Liquid pressure-control diagram showing conditions, relays, manual actions, system unlock, and ignition logic"></div>
+        <p class="diagram-help">Use the controls or mouse wheel to zoom. Drag the diagram while zoomed.</p>
+      </div>
+    </section>
+
+    <section class="logic-cards section" aria-label="Liquid control diagram guide">
+      <article class="reveal"><span>01</span><h3>Pressure conditions</h3><p>Green blocks record the pressure comparisons and thresholds that feed the sequence.</p></article>
+      <article class="reveal"><span>02</span><h3>Relay actions</h3><p>Blue blocks identify the relays associated with each satisfied condition.</p></article>
+      <article class="reveal"><span>03</span><h3>Manual gates</h3><p>Red blocks mark operator actions such as opening stages, unlocking, and ignition.</p></article>
+      <article class="reveal"><span>04</span><h3>Ladder logic</h3><p>The right-side panel is an unfinished control-panel representation and is labeled accordingly.</p></article>
+    </section>
+
+    <section class="architecture project-architecture" id="feed-architecture">
+      <div class="architecture-copy reveal"><p class="kicker"><span>System architecture</span> Liquid feed</p><h2>Trace the hardware.</h2><p>The feed diagram maps nitrogen pressurization, fuel and oxidizer distribution, pneumatic controls, instrumentation, and the rocket engine.</p><div class="architecture-actions"><a class="button button-primary" href="assets/liquid-feed-system.png" target="_blank" rel="noopener">Open full diagram <span aria-hidden="true">↗</span></a><a class="button button-quiet light" href="https://csula-my.sharepoint.com/:x:/g/personal/akuo18_calstatela_edu/IQAz0GabubVDTYpU_cpcBnSJAVRzSS6f3duHqgp0UFot28Q?e=eVxtSG" target="_blank" rel="noopener">Open working BOM <span aria-hidden="true">↗</span></a></div><p class="working-note"><strong>Working file:</strong> coefficient fitting and the component list are still in progress.</p></div>
+      <a class="diagram-frame reveal" href="assets/liquid-feed-system.png" target="_blank" rel="noopener" aria-label="Open the liquid feed system diagram at full size"><img src="assets/liquid-feed-system.png" alt="Liquid rocket feed system schematic"><span>Open full resolution ↗</span></a>
+    </section>
+
+    <section class="project-next section reveal">
+      <p class="kicker"><span>Continue exploring</span> Solid propulsion</p>
+      <h2>See how the solid vehicle connects avionics, recovery, and two-servo motor control.</h2>
+      <a class="button button-primary" href="solid-tvc.html">Open Solid Rocket &amp; TVC <span aria-hidden="true">→</span></a>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="index.html"><img src="assets/mark.svg" alt=""><span><strong>Eagle Rocketry</strong><small>Cal State LA</small></span></a><p>Liquid systems · Pressure control</p><p>© <span data-year>2026</span> Eagle Rocketry</p></footer>
+  <script src="project.js?v=2026-11-18"></script>
+</body>
+</html>

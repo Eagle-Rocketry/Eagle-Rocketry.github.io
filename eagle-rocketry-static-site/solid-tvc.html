@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#070b0f">
+  <title>Solid Rocket &amp; TVC — Eagle Rocketry</title>
+  <meta name="description" content="Explore Eagle Rocketry's solid-motor avionics and two-servo thrust-vector-control architecture.">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css?v=2026-11-18b">
+</head>
+<body class="project-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="space" aria-hidden="true"><div class="stars stars-a"></div><div class="stars stars-b"></div></div>
+  <div class="page-progress" aria-hidden="true"><span></span></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Eagle Rocketry home"><img src="assets/mark.svg" alt=""><span><strong>Eagle Rocketry</strong><small>Cal State LA</small></span></a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" aria-label="Primary navigation"><a href="index.html">Home</a><a href="liquid-systems.html">Liquid Systems</a><a class="active" href="solid-tvc.html">Solid / TVC</a><a href="index.html#resources">Resources</a><a class="nav-cta" href="mailto:eagle.rocketry.seds@gmail.com">Contact</a></nav>
+  </header>
+
+  <main id="main" class="project-main">
+    <section class="project-hero solid-hero">
+      <div class="project-hero-copy reveal">
+        <p class="kicker"><span>Solid propulsion</span> Vehicle control</p>
+        <h1>Control across<br><em>two axes.</em></h1>
+        <p>The team diagram connects onboard video, radio, power, recovery, and PWM control to a motor chamber with two servos around the solid motor.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#solid-architecture">Explore the system <span aria-hidden="true">↘</span></a><a class="button button-quiet" href="#tvc-reference">TVC reference</a></div>
+      </div>
+      <div class="project-hero-art solid-art reveal" aria-hidden="true">
+        <div class="axis-ring axis-x"><span>X</span></div><div class="axis-ring axis-y"><span>Y</span></div>
+        <div class="motor-core"><span>SERVO 1</span><i></i><b>MOTOR</b><i></i><span>SERVO 2</span></div>
+        <div class="axis-caption">Two-servo motor control</div>
+      </div>
+      <div class="project-index" aria-hidden="true">ER / SOLID / 02</div>
+    </section>
+
+    <section class="project-intro section reveal">
+      <div><p class="kicker"><span>01</span> Vehicle architecture</p><h2>Signals meet<br>hardware.</h2></div>
+      <p>The supplied block diagram is intentionally simple: most of the solid vehicle's complexity is in the mechanical design. This page keeps the documented electrical and control relationships easy to inspect.</p>
+    </section>
+
+    <section class="diagram-section" id="solid-architecture">
+      <div class="diagram-heading reveal">
+        <div><p class="kicker"><span>Interactive diagram</span> Solid vehicle</p><h2>Avionics to motor.</h2></div>
+        <div class="status-panel status-ready"><strong>2D</strong><span>Two-servo gimbal</span><p>The motor chamber shows one servo on either side of the motor.</p></div>
+      </div>
+      <div class="diagram-viewer portrait-viewer reveal" data-diagram-viewer>
+        <div class="diagram-toolbar" aria-label="Diagram zoom controls">
+          <span>Solid motor architecture</span>
+          <div><button type="button" data-zoom="out" aria-label="Zoom out">−</button><output data-zoom-readout>100%</output><button type="button" data-zoom="in" aria-label="Zoom in">+</button><button type="button" data-zoom="reset">Reset</button></div>
+        </div>
+        <div class="diagram-stage"><img class="zoom-diagram" src="assets/solid-motor-system.png" alt="Solid rocket block diagram with camera, VTX, UBEC, battery, ELRS, PWM, chute, two servos, and motor"></div>
+        <p class="diagram-help">Use the controls or mouse wheel to zoom. Drag the diagram while zoomed.</p>
+      </div>
+    </section>
+
+    <section class="subsystem-map section" aria-label="Solid rocket diagram guide">
+      <article class="reveal"><span>01 / NOSE CONE</span><h3>Camera &amp; VTX</h3><p>The nose cone contains the camera, VTX, and the diagram's upper antenna connection.</p></article>
+      <article class="reveal"><span>02 / FUSELAGE</span><h3>Power, radio &amp; recovery</h3><p>The fuselage connects the UBEC, battery, ELRS, PWM, second antenna, and chute.</p></article>
+      <article class="reveal"><span>03 / MOTOR CHAMBER</span><h3>Two-servo control</h3><p>PWM connects to Servo 1, the motor, and Servo 2 inside the motor chamber.</p></article>
+    </section>
+
+    <section class="tvc-reference" id="tvc-reference">
+      <div class="tvc-copy reveal"><p class="kicker"><span>Mechanical reference</span> BPS.Space</p><h2>Reference the source.</h2><p>The team is studying a BPS.Space R2-74 two-axis gimbal as a mechanical reference. Because the STL and instruction package is sold by BPS.Space, this public page links visitors to the official source instead of offering copied downloads.</p><a class="button button-primary" href="https://bps.space/products/thrust-vector-control" target="_blank" rel="noopener">Visit official BPS.Space page <span aria-hidden="true">↗</span></a></div>
+      <div class="cad-slot reveal" aria-label="Future team-owned 3D model">
+        <div class="cad-rings"><i></i><i></i><span>CAD</span></div>
+        <p><strong>Interactive model reserved</strong><small>This space will use an approved, team-owned rocket or gimbal CAD export.</small></p>
+      </div>
+    </section>
+
+    <section class="project-next section reveal">
+      <p class="kicker"><span>Continue exploring</span> Liquid propulsion</p>
+      <h2>Follow pressure conditions through relay actions, unlock, and ignition.</h2>
+      <a class="button button-primary" href="liquid-systems.html">Open Liquid Systems <span aria-hidden="true">→</span></a>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="index.html"><img src="assets/mark.svg" alt=""><span><strong>Eagle Rocketry</strong><small>Cal State LA</small></span></a><p>Solid propulsion · Vehicle control</p><p>© <span data-year>2026</span> Eagle Rocketry</p></footer>
+  <script src="project.js?v=2026-11-18"></script>
+</body>
+</html>
