@@ -22,6 +22,28 @@ These websites are references for overall experience and art direction. Their co
 - Keep the homepage cinematic and concise; place detailed engineering material on dedicated project pages.
 - Preserve clear mobile navigation, reduced-motion support, readable text, and a visible way to skip animation.
 
+## Generic AI patterns to avoid
+
+- Purple or blue gradient blobs used as decoration without engineering meaning.
+- Glass panels, oversized rounded corners, and soft shadows applied to every section.
+- Repeated rows of three interchangeable feature cards and generic line icons.
+- Vague hero claims, inflated marketing language, and calls to action such as “Unlock potential.”
+- Bento grids that fragment a simple story into unrelated boxes.
+- Motion added only for atmosphere instead of explaining a system or helping navigation.
+- Placeholder metrics, fake testimonials, fictional hardware, and decorative dashboards.
+
+Prefer sparse editorial composition, direct technical language, real diagrams, asymmetric layouts, sharp edges, purposeful motion, and clear routes to project details.
+
+## Flight 12 principles to adapt
+
+- Full-screen visual storytelling with minimal navigation.
+- Oversized typography used as a narrative device rather than decoration.
+- Long scroll sequences that move between mission stages and technical views.
+- Vehicle or system imagery treated as a technical specimen with restrained labels.
+- Strong contrast between cinematic scenes and quiet black technical sections.
+
+These principles should be translated into Eagle Rocketry’s own identity and content. The Flight 12 layouts, assets, wording, and code should not be reproduced exactly.
+
 ## Current implementation
 
 - The homepage introduces the program, systems, history, and engineering resources.
