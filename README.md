@@ -22,8 +22,11 @@ Opening `index.html` directly also works for basic review, but a local server mo
 
 - `.github/workflows/jekyll.yml` publishes the static site to GitHub Pages after changes reach `main`.
 - `eagle-rocketry-static-site/index.html` contains the page structure and public content.
+- `eagle-rocketry-static-site/liquid-systems.html` presents the feed architecture and pressure-control logic.
+- `eagle-rocketry-static-site/solid-tvc.html` presents the solid-motor system and two-servo control architecture.
 - `eagle-rocketry-static-site/styles.css` contains responsive layout, art direction, and animation styles.
 - `eagle-rocketry-static-site/launch.js` controls the readiness counter, launch sequence, smoke simulation, and interactive motion.
+- `eagle-rocketry-static-site/project.js` provides project-page navigation, reveal motion, scroll progress, and diagram zoom controls.
 - `eagle-rocketry-static-site/assets/` contains approved public brand and diagram assets used by the published site.
 - `assets/` contains engineering source files and diagrams contributed by team members.
 
@@ -32,6 +35,8 @@ Opening `index.html` directly also works for basic review, but a local server mo
 - The Spring 2026 bill of materials remains on the team SharePoint and is not stored in public Git history.
 - The workbook is intentionally identified as in progress because coefficient fitting and the component list are incomplete.
 - Flight Operations links to the team-contributed liquid launch logic diagram.
+- The control-panel ladder logic is labeled as a work in progress.
+- The BPS.Space TVC reference points to the official product page rather than republishing third-party downloads.
 - Historical project summaries link to the corresponding Cal State LA capstone archive pages.
 
 Review technical files, personal metadata, image rights, and team approval before adding new downloadable assets to the public repository.
