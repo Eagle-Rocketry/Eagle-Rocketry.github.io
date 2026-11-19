@@ -7,9 +7,9 @@
   <title>Eagle Rocketry — Cal State LA</title>
   <meta name="description" content="Eagle Rocketry at Cal State LA: student-led rocket design, testing, documentation, and flight operations.">
   <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=2026-11-18b">
+  <link rel="stylesheet" href="styles.css?v=2026-11-18c">
 </head>
-<body class="intro-active">
+<body class="home-page intro-active">
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="space" aria-hidden="true"><div class="stars stars-a"></div><div class="stars stars-b"></div></div>
   <canvas id="smoke" aria-hidden="true"></canvas>
@@ -36,16 +36,16 @@
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Eagle Rocketry home"><img src="assets/mark.svg" alt=""><span><strong>Eagle Rocketry</strong><small>Cal State LA</small></span></a>
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-    <nav id="site-nav" aria-label="Primary navigation"><a href="#systems">Systems</a><a href="#timeline">Timeline</a><a href="#resources">Resources</a><a href="#about">About</a><a class="nav-cta" href="mailto:eagle.rocketry.seds@gmail.com">Contact</a></nav>
+    <nav id="site-nav" aria-label="Primary navigation"><a href="liquid-systems.html">Liquid</a><a href="solid-tvc.html">Solid / TVC</a><a href="#timeline">History</a><a href="#resources">Resources</a><a class="nav-cta" href="mailto:eagle.rocketry.seds@gmail.com">Contact</a></nav>
   </header>
 
   <main id="main">
     <section class="hero" id="top">
       <div class="hero-copy">
-        <p class="kicker"><span>Cal State LA</span> Student Rocketry</p>
-        <h1>Engineering<br><em>the next flight.</em></h1>
-        <p class="hero-intro">Eagle Rocketry brings students together to design, build, test, and document aerospace systems—turning classroom fundamentals into flight hardware.</p>
-        <div class="hero-actions"><a class="button button-primary" href="#systems">Explore the systems <span aria-hidden="true">↘</span></a><a class="button button-quiet" href="#timeline">View our history</a></div>
+        <p class="kicker"><span>Eagle Rocketry</span> Cal State LA</p>
+        <h1>Flight systems<br><em>2026.</em></h1>
+        <p class="hero-intro">A public engineering record of student-built liquid-feed work, pressure control, solid-motor avionics, and test-driven design.</p>
+        <div class="hero-actions"><a class="button button-primary" href="liquid-systems.html">Enter liquid systems <span aria-hidden="true">→</span></a><a class="button button-quiet" href="solid-tvc.html">Explore solid / TVC</a></div>
       </div>
       <div class="hero-visual" aria-label="Eagle Rocketry brand mark">
         <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
@@ -73,11 +73,11 @@
     <section class="mission-strip" aria-label="Eagle Rocketry process"><span>Conceive</span><i></i><span>Analyze</span><i></i><span>Manufacture</span><i></i><span>Integrate</span><i></i><span>Fly</span></section>
 
     <section class="section systems" id="systems">
-      <div class="section-heading reveal"><p class="kicker"><span>01</span> Mission systems</p><h2>Built as one vehicle.</h2><p>Engineering resources for understanding how the vehicle, feed system, components, and launch procedures fit together.</p></div>
-      <div class="system-grid">
-        <a class="system-card system-card-featured reveal" href="liquid-systems.html#feed-architecture"><span class="card-index">01</span><div><p class="status status-live">Available now</p><h3>System Architecture</h3><p>Explore the liquid feed system and the Spring 2026 working bill of materials.</p></div><span class="card-arrow" aria-hidden="true">→</span></a>
-        <a class="system-card reveal" href="liquid-systems.html#control-logic"><span class="card-index">02</span><div><p class="status status-live">Available · WIP noted</p><h3>Flight Operations</h3><p>Follow pressure conditions, relay actions, system unlock, and ignition. The ladder logic remains a work in progress.</p></div><span class="card-arrow" aria-hidden="true">→</span></a>
-        <a class="system-card reveal" href="solid-tvc.html"><span class="card-index">03</span><div><p class="status status-live">Available now</p><h3>Solid Rocket &amp; TVC</h3><p>Explore onboard systems and the two-servo motor-control architecture.</p></div><span class="card-arrow" aria-hidden="true">→</span></a>
+      <div class="section-heading reveal"><p class="kicker"><span>01</span> Current engineering</p><h2>Choose a system.</h2><p>Open the team’s real diagrams and follow each project from architecture to control logic.</p></div>
+      <div class="system-grid mission-index">
+        <a class="system-card system-card-featured reveal" href="liquid-systems.html#feed-architecture"><span class="card-index">01</span><div><p class="status status-live">Liquid propulsion</p><h3>System Architecture</h3><p>Trace pressurization, propellant distribution, controls, instrumentation, and the engine.</p></div><figure class="system-preview"><img src="assets/liquid-feed-system.png" alt=""></figure><span class="card-arrow" aria-hidden="true">→</span></a>
+        <a class="system-card reveal" href="liquid-systems.html#control-logic"><span class="card-index">02</span><div><p class="status status-live">Liquid control · WIP noted</p><h3>Flight Operations</h3><p>Follow pressure conditions, relay actions, system unlock, and ignition.</p></div><figure class="system-preview system-preview-dark"><img src="assets/flight-operations-logic.png" alt=""></figure><span class="card-arrow" aria-hidden="true">→</span></a>
+        <a class="system-card reveal" href="solid-tvc.html"><span class="card-index">03</span><div><p class="status status-live">Solid propulsion</p><h3>Solid Rocket &amp; TVC</h3><p>Inspect onboard systems and the two-servo motor-control architecture.</p></div><figure class="system-preview system-preview-portrait"><img src="assets/solid-motor-system.png" alt=""></figure><span class="card-arrow" aria-hidden="true">→</span></a>
         <a class="system-card reveal" href="#timeline"><span class="card-index">04</span><div><p class="status">Project archive</p><h3>Program Timeline</h3><p>Follow selected propulsion, controls, structures, and current feed-system work.</p></div><span class="card-arrow" aria-hidden="true">↘</span></a>
         <a class="system-card reveal" href="#resources"><span class="card-index">05</span><div><p class="status">Student resources</p><h3>Engineering Toolkit</h3><p>Open university facilities, competition information, and technical project files.</p></div><span class="card-arrow" aria-hidden="true">↘</span></a>
       </div>
